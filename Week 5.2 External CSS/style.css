@@ -1,0 +1,28 @@
+body {
+    background-color: #1e1e1e;
+}
+p#title {
+    color: black;
+    background-color: white;
+}
+p#subtitle {
+    color: white;
+
+}
+
+body#task{
+    background-color: red;
+}
+p#tasktitle {
+    color: black;
+    background-color: red;
+    border: 1px solid black;
+}
+p#taskname {
+    color: black;
+    background-color: white;
+}
+p#taskdesc {
+    color: black;
+    background-color: blue;
+}

@@ -1,0 +1,16 @@
+Week 3.3 Anchor and Images
+index.html
+feed.html
+
+<a href="">Menuju Feed</a>
+a, merupakan tag
+href, atributes 
+Menuju Feed, Value
+
+
+buatlah sebuah file dalam folder yang sama
+bio.html, isilah dengan data kalian
+datanya terserah gausah nanya (makin banyak makin tinggi nilainya)
+
+di index ada tombol menuju bio
+di bio ada tombol kembali ke index

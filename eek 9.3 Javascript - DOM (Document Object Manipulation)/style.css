@@ -1,0 +1,17 @@
+body {
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+    font-family: "Montserrat", sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+input#nilaihtml, input#nilaicss, input#nilaijs, input#nilaiestetika {
+    border: 1px solid black;
+    &:hover {
+        border: 1px solid blue;
+    }
+    border-radius: 5px;
+}

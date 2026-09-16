@@ -1,0 +1,15 @@
+p {
+    background-color: #f0f0f0;
+}
+
+p#title {
+    background-color: red;
+    color: white;
+}
+
+body  {
+    background-color: #c17373;
+}
+body#task{
+    background-color: red;
+}

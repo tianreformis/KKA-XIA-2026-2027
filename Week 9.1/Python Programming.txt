@@ -1,0 +1,11 @@
+nama = "Khen Glo Arya"
+a =10
+b =20
+hasil_tambah = a+b
+hasil_kurang = a-b
+hasil_kali = a*b
+hasil_bagi = a/b
+print ("Hasil Tambah = ",hasil_tambah) 
+print ("Hasil Kurang = ",hasil_kurang)
+print ("Hasil Kali = ",hasil_kali)
+print ("Hasil Bagi=",hasil_bagi)

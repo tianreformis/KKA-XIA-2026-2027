@@ -1,0 +1,39 @@
+Web Programming, 
+	HTML
+	CSS
+	Javascript
+
+Analogi Kucing
+	HTML (Tulang Kucing)
+	CSS (Warna, Bentuk dari Kucing, Estetika Kucing)
+	Javascript (Otaknya kucing, logikanya kucing)
+
+HTML (Hypertext Markup Language), bukan bahasa program bahasa mark up.
+file format.html
+
+CSS (Cascading Style Sheet)
+file format.css
+
+Javascript
+file format.js
+
+Buat Folder XI 
+Week 3 - Web Programing (Introduction)
+
+IDE (Integrating Development Environtment), Visual Studio Code
+
+
+
+Belajar buka folder.
+double closing tag 
+
+single closing tag
+</br> break line, untuk spasi
+
+CHrome, Firefox, 
+Management Font 
+italic, bold, underline
+
+
+
+

@@ -1,0 +1,17 @@
+body {
+    font-family: "Fira Code", monospace;
+}
+p#title{
+    background-color: antiquewhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+    margin:0px 20px 0px 0px;
+}
+p#subtitle{
+    background-color: aquamarine;
+    text-align: center;
+    padding:10px 0px 10px 0px;
+
+}
