@@ -33,3 +33,7 @@ loginButton.addEventListener("click", function () {
         return;
     }
 });
+
+
+//kalau mau check kodingan saya disini di week 10.2
+// https://github.com/tianreformis/KKA-XIA-2026-2027
