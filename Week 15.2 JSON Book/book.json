@@ -1,0 +1,74 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": 1925,
+        "city": "New York",
+        "publisher": "Charles Scribner's Sons"
+
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": 1960,
+        "city": "New York",
+        "publisher": "J. B. Lippincott & Co."
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "year": 1949,
+        "city": "London",
+        "publisher": "Secker & Warburg"
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "year": 1951,
+        "city": "New York",
+        "publisher": "Little, Brown and Company"
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "year": 1954,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "year": 1937,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    },
+    {
+        "title": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "year": 1950,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    },
+    {
+        "title": "The Lion, the Witch and the Wardrobe",
+        "author": "C.S. Lewis",
+        "year": 1950,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "year": 1937,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "year": 1954,
+        "city": "London",
+        "publisher": "Allen & Unwin"
+    }
+
+]

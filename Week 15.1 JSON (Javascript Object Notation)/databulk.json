@@ -22,5 +22,13 @@
         "tempat_lahir": "Jakarta",
         "tanggal_lahir": "2003-01-15",
         "alamat": "Jl. Merdeka No. 10"
+    },
+    {
+        "nama": "Andi",
+        "umur": 20,
+        "kelas": "XI A",
+        "tempat_lahir": "Jakarta",
+        "tanggal_lahir": "2003-01-15",
+        "alamat": "Jl. Merdeka No. 10"
     }
 ]
