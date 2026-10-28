@@ -1,52 +1,81 @@
-fetch("book.json")
-    .then(function(response){
-        if(!response.ok){
-            throw new Error("Data tidak ditemukan");
-        }else{
+
+function ambilDataBuku() {
+    return fetch("book.json")
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error("Data tidak ditemukan");
+            }
             return response.json();
-        }
-    })
-    .then(function(siswa){
-        const tabel=document.getElementById("book-data");
-        siswa.forEach(function(item,index){
-            //start index from 1
-            index++;
-            const row = document.createElement("tr");
-            row.innerHTML=`
-                <td>${index}</td>
-                <td>${item.title}</td>
-                <td>${item.author}</td>
-                <td>${item.year}</td>
-                <td>${item.city}</td>
-                <td>${item.publisher}</td>
-            `;
-            tabel.appendChild(row);
         })
-    })
+        .then(function(bukuJSON) {
+            // Ambil data tambahan yang tersimpan
+            const dataLokal = JSON.parse(
+                localStorage.getItem("dataBuku") || "[]"
+            );
 
-
-function addHTML(){
-    window.location.href="add.html";
+            // Gabungkan data dari JSON dengan data tambahan
+            return bukuJSON.concat(dataLokal);
+        });
 }
 
-//Bagian Add Book
+// Tampilkan data di index.html
+const tabel = document.getElementById("book-data");
+
+if (tabel) {
+    ambilDataBuku()
+        .then(function(buku) {
+            buku.forEach(function(item, index) {
+                const row = document.createElement("tr");
+
+                const nomor = document.createElement("td");
+                nomor.textContent = index + 1;
+                row.appendChild(nomor);
+
+                ["title", "author", "year", "city", "publisher"]
+                    .forEach(function(field) {
+                        const cell = document.createElement("td");
+                        cell.textContent = item[field];
+                        row.appendChild(cell);
+                    });
+
+                tabel.appendChild(row);
+            });
+        })
+        .catch(function(error) {
+            console.error(error);
+        });
+}
+
+// Proses tambah buku di add.html
 const form = document.getElementById("form-book");
 
-if (form){
-    form.addEventListener("submit",function(event){
-        //preventDefault untuk menghentikan submit
+if (form) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
-        const newBook = {
-            //trim berguna untuk menghilangkan spasi di awal dan akhir
-            title : form.getElementById("title").value.trim(),
-            author : form.getElementById("author").value.trim(),
-            year :form.getElementById("year").value.trim(),
-            city : form.getElementById("city").value.trim(),
-            publisher : form.getElementById("publisher").value.trim(),
+
+        const bukuBaru = {
+            title: document.getElementById("title").value.trim(),
+            author: document.getElementById("author").value.trim(),
+            year: Number(document.getElementById("year").value),
+            city: document.getElementById("city").value.trim(),
+            publisher: document.getElementById("publisher").value.trim()
         };
-        //JSON.parse untuk mengubah string menjadi object
-        const saveToLocalData = JSON.parse(
-            
+
+        const dataLokal = JSON.parse(
+            localStorage.getItem("dataBuku") || "[]"
         );
-    })
+
+        dataLokal.push(bukuBaru);
+
+        localStorage.setItem("dataBuku", JSON.stringify(dataLokal));
+
+        alert("Data buku berhasil ditambahkan!");
+
+        form.reset();
+        window.location.href = "index.html";
+    });
+}
+
+function addHTML() {
+    window.location.href = "add.html";
 }
