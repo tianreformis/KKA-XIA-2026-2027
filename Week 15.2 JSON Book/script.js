@@ -37,7 +37,27 @@ if (tabel) {
                         cell.textContent = item[field];
                         row.appendChild(cell);
                     });
-
+                
+                //kolom actions
+                const actions = document.createElement("td");
+                //tombol edit
+                const tombolEdit = document.createElement("button");
+                tombolEdit.textContent = "Edit";
+                tombolEdit.type = "button";
+                tombolEdit.addEventListener("click", function() {
+                    editBuku(item.id);
+                });
+                //tombol hapus
+                const tombolHapus = document.createElement("button");
+                tombolHapus.textContent = "Hapus";
+                tombolHapus.type = "button";
+                tombolHapus.addEventListener("click", function() {
+                    hapusBuku(item.id);
+                });
+                //tambahkan object kedalam HTML
+                actions.appendChild(tombolEdit);
+                actions.appendChild(tombolHapus);
+                row.appendChild(actions);               
                 tabel.appendChild(row);
             });
         })
